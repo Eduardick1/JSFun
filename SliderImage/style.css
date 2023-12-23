@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100dvh;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+	overflow: hidden;
+	width: 100dvw;
+	height: 100dvh;
+	position: relative;
+}
+
+.sidebar {
+	height: 100%;
+	width: 30%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: transform 1s ease-in-out;
+}
+
+.sidebar > div {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+.sidebar h1 {
+	font-size: 3rem;
+	margin-top: -2rem;
+	margin-bottom: .75rem;
+}
+
+.main-slide {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 30%;
+	width: 70%;
+	transform: transform 1s ease-in-out;
+}
+
+.main-slide > div {
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	transform: transform 1s ease-in-out;
+}
+
+button {
+	background-color: #fff;
+	border: none;
+	color: #aaa;
+	font-size: 1rem;
+	padding: 1rem;
+	cursor: pointer;
+}
+
+button:hover {
+	color: #222;
+}
+button:focus {
+	outline: none;
+}
+
+.container .controls button{
+	position: absolute;
+	left: 30%;
+	top: 50%;
+	z-index: 3;
+}
+.container .controls .down{
+	transform: translateX(-100%);
+	border-top-left-radius: .3rem;
+	border-bottom-left-radius: .3rem;
+}
+.container .controls .up{
+	transform: translateY(-100%);
+	border-top-right-radius: .3rem;
+	border-bottom-right-radius: .3rem;
+
+}

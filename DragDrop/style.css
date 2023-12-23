@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(10, 10, 87);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  width: 100%;
+  gap: 15rem;
+}
+.place {
+  width: 60px;
+  height: 100px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+}
+h3 {
+  text-align: center;
+  background-color: beige;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+.hovered {
+  border-top: 2px solid white;
+  transform: all 500ms ease;
+}
+.drag {
+  cursor: grabbing;
+}
+.hold {
+  border: 2px solid red;
+}
+.hide {
+  display: none;
+}
