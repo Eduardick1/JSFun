@@ -101,13 +101,6 @@ function buildTree(data, parentId, container) {
           break;
         }
       }
-      if (item.node === 0) {
-        li.classList.add("element");
-        li.innerHTML = `<span>${item.name}, ${item.price} руб.</span>`;
-      } else if (item.node === 1) {
-        li.classList.add("node");
-        li.innerHTML = `<span>${item.name}</span>`;
-      }
 
       ul.appendChild(li);
       const children = buildTree(data, item.id, ul);
