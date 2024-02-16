@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="add-new-address" class="modal_address">
+      <div class="modal_address-dialog">
+        <div class="modal_address-content">
+          <div class="modal_address-body">
+            <a href="#" class="close"
+              ><i class="fa fa-times" aria-hidden="true"></i
+            ></a>
+            <form class="new-address">
+              <h2 class="text-center" id="modalTitle">
+                Добавьте адрес доставки
+              </h2>
+              <div id="AddressAddInput" class="mb-4">
+                <div class="form-outline form-outline-modal">
+                  <input
+                    type="text"
+                    class="form-control form-control-modal add-address-input"
+                    id="AddCountry"
+                    placeholder="Страна"
+                  />
+                  <ul name="Country" id="SelectCountry" class="open"></ul>
+                </div>
+                <div
+                  style="display: none"
+                  class="form-outline form-outline-modal"
+                >
+                  <input
+                    type="text"
+                    class="form-control form-control-modal add-address-input"
+                    id="AddRegion"
+                    placeholder="Код страны"
+                  />
+                </div>
+                <div class="form-outline form-outline-modal">
+                  <input
+                    type="text"
+                    class="form-control form-control-modal add-address-input"
+                    id="AddCity"
+                    placeholder="Город"
+                  />
+                </div>
+                <div class="form-outline form-outline-modal">
+                  <input
+                    type="text"
+                    class="form-control form-control-modal add-address-input"
+                    id="AddAddress"
+                    placeholder="Улица, дом и квартира"
+                  />
+                </div>
+                <div class="form-outline form-outline-modal">
+                  <input
+                    type="text"
+                    class="form-control form-control-modal add-address-input"
+                    id="AddPostcode"
+                    placeholder="Индекс"
+                  />
+                </div>
+              </div>
+              <div class="form-outline form-outline-modal text-center pb-4">
+                <button type="submit" class="btn btn-modal" id="AddAddressBtn">
+                  Добавить
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
